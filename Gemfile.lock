@@ -1,0 +1,16 @@
+PATH
+  remote: .
+  specs:
+    url_formatter (0.0.1)
+      youtube_id
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    youtube_id (0.0.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  url_formatter!
