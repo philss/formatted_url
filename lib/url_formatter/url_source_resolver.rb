@@ -1,23 +1,34 @@
-# Find URL source
-class URLSourceResolver
-  attr_accessor :url
+require File.expand_path('../url_strategy', __FILE__)
 
-  def initialize(url)
-    @url = url
-  end
+module URLFormatter
+  # Find URL source
+  class URLSourceResolver
+    attr_accessor :path
+    attr_reader :format
 
-  # Defines url source
-  def source
-    if clean_url =~ /youtube/
-      return :youtube
-    else
+    def initialize(path, format = :default)
+      @path = path
+      @format = format
+    end
+
+    # Defines url source
+    def source
+      STRATEGIES.each_key do |key|
+        if clean_url.include? key.to_s
+          return key
+        end
+      end
       return :default
     end
-  end
 
-  private
-  # URL without .
-  def clean_url
-    @url.gsub('.','')
+    def url
+      STRATEGIES[source].url(path, format)
+    end
+
+    private
+    # URL without "dot"
+    def clean_url
+      @path.gsub('.','')
+    end
   end
 end

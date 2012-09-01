@@ -2,7 +2,7 @@ require 'test_helper'
 
 class YoutubeURLStrategyTest < Test::Unit::TestCase
   def setup
-    @strategy = YoutubeURLStrategy
+    @strategy = URLFormatter::Strategies::YoutubeURLStrategy
     @url = 'http://www.youtube.com/watch?v=bNlNZ2T9EeY'
     @url2 = 'http://www.youtube.com/watch?v=XXXdDDASDFw'
   end
@@ -18,6 +18,10 @@ class YoutubeURLStrategyTest < Test::Unit::TestCase
 
   def test_embed_url
     assert_equal('http://youtube.com/embed/bNlNZ2T9EeY', @strategy.url(@url, :embed))
+  end
+
+  def test_unknown_format_returns_default
+    assert_equal(@url, @strategy.url(@url,:other_format))
   end
 
 end

@@ -2,7 +2,7 @@ require 'test_helper'
 
 class URLSourceResolverTest < Test::Unit::TestCase
   def setup
-    @resolver = URLSourceResolver.new('http://youtube.com')
+    @resolver = URLFormatter::URLSourceResolver.new('http://youtube.com')
   end
 
   def test_find_youtube_as_source
@@ -10,7 +10,7 @@ class URLSourceResolverTest < Test::Unit::TestCase
   end
 
   def test_default_source_for_url
-    @resolver.url = "http://google.com"
+    @resolver.path = "http://google.com"
     assert_equal(:default, @resolver.source)
   end
 end

@@ -2,7 +2,7 @@ require 'test_helper'
 
 class DefaultURLStrategyTest < Test::Unit::TestCase
   def setup
-    @strategy = DefaultURLStrategy
+    @strategy = URLFormatter::Strategies::DefaultURLStrategy
   end
 
   def test_default_url_always_return_same_url

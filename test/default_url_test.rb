@@ -7,7 +7,7 @@ class DefaultURLTest < Test::Unit::TestCase
   end
 
   def test_default_url_returns_always_the_same
-    assert_equal(URLFormatter.url(@base_url) ,@base_url)
+    assert_equal(URLFormatter.url(@base_url, :default) ,@base_url)
     [:short, :embed, :default].each do |format|
       assert_equal(URLFormatter.url(@base_url, format) ,@base_url)
     end

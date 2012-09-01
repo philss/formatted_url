@@ -2,10 +2,10 @@ require 'test_helper'
 
 class URLStrategyTest < Test::Unit::TestCase
   def test_youtube_strategy
-    assert_equal(YoutubeURLStrategy, URLStrategy.strategy(:youtube))
+    assert_equal(URLFormatter::Strategies::YoutubeURLStrategy, URLFormatter.strategy(:youtube))
   end
 
   def test_default_strategy
-    assert_equal(DefaultURLStrategy, URLStrategy.strategy(:default))
+    assert_equal(URLFormatter::Strategies::DefaultURLStrategy, URLFormatter.strategy(:default))
   end
 end
