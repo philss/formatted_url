@@ -1,9 +1,14 @@
-Gem::Specification.new do |gem|
-  gem.name = "url_formatter"
-  gem.summary = "Formatted URLs."
-  gem.files =  `git ls-files`.split("\n")
-  gem.test_files = `git ls-files -- {test}/*`.split("\n")
-  gem.require_path = ['lib']
-  gem.version = '0.0.1'
-  gem.add_dependency('youtube_id')
+Gem::Specification.new do |s|
+  s.name = "url_formatter"
+  s.summary = "Formatted URLs."
+  s.files =  `git ls-files`.split("\n")
+  s.test_files = `git ls-files -- {test}/*`.split("\n")
+  s.require_path = ['lib']
+  s.version = '0.0.1'
+  s.add_dependency('youtube_id')
+
+  s.author = "Philip Sampaio Silva"
+  s.email  = "philip.sampaio@gmail.com"
+  s.required_ruby_version = '>= 1.9.3'
+  
 end
