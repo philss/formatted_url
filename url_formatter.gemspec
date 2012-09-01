@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.files =  `git ls-files`.split("\n")
   s.test_files = `git ls-files -- {test}/*`.split("\n")
   s.require_path = ['lib']
-  s.version = '0.0.1'
+  s.version = '0.0.2'
   s.add_dependency('youtube_id')
 
   s.author = "Philip Sampaio Silva"
