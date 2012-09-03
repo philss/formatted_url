@@ -1,6 +1,6 @@
 URL Formatter
 =============
-[![Build Status](https://secure.travis-ci.org/philss/url_formatter.png?branch=master "Build Status")
+[![Build Status](https://secure.travis-ci.org/philss/url_formatter.png?branch=master "Build Status")](http://travis-ci.org/philss/url_formatter)
 [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/philss/url_formatter)
 
 The easiest way to get formatted URLs.
