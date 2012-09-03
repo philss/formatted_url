@@ -1,4 +1,4 @@
-require File.expand_path('../url_strategy', __FILE__)
+require File.expand_path('../strategies', __FILE__)
 
 module URLFormatter
   # Find URL source
