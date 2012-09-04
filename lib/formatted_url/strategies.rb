@@ -1,7 +1,7 @@
 require File.expand_path('../strategies/default_url_strategy', __FILE__)
 require File.expand_path('../strategies/youtube_url_strategy', __FILE__)
 
-module URLFormatter
+module FormattedURL
   # Setting the strategies
   # TODO: Configurable strategies
   STRATEGIES = {
@@ -13,7 +13,7 @@ module URLFormatter
   #
   # Example:
   #
-  #   URLFormatter.strategy(:youtube)
+  #   FormattedURL.strategy(:youtube)
   #   => Strategies::YoutubeURLStrategy
   def self.strategy(source)
     STRATEGIES[source]

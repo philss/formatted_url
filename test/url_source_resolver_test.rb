@@ -2,7 +2,7 @@ require 'test_helper'
 
 class URLSourceResolverTest < Test::Unit::TestCase
   def setup
-    @resolver = URLFormatter::URLSourceResolver.new('http://youtube.com')
+    @resolver = FormattedURL::URLSourceResolver.new('http://youtube.com')
   end
 
   def test_find_youtube_as_source

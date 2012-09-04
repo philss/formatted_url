@@ -1,2 +1,2 @@
 require 'test/unit'
-require File.expand_path('../../lib/url_formatter',__FILE__)
+require File.expand_path('../../lib/formatted_url',__FILE__)

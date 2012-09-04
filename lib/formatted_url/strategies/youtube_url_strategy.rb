@@ -1,7 +1,7 @@
 require 'youtube_id'
 require File.expand_path('../default_url_strategy', __FILE__)
 
-module URLFormatter
+module FormattedURL
   module Strategies
     # Youtube Strategy to work with embed
     # and short formats

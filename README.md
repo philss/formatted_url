@@ -1,4 +1,4 @@
-URL Formatter
+FormattedURL
 =============
 [![Build Status](https://secure.travis-ci.org/philss/url_formatter.png?branch=master "Build Status")](http://travis-ci.org/philss/url_formatter)
 [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/philss/url_formatter)
@@ -11,5 +11,3 @@ Example:
 URLFormatter.url("http://www.youtube.com/watch?v=RchTlF4aKGs", :embed)
 # => "http://youtube.com/embed/RchTlF4aKGs"
 ```
-
-TODO: Change the name of gem

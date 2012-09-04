@@ -1,6 +1,6 @@
 require File.expand_path('../strategies', __FILE__)
 
-module URLFormatter
+module FormattedURL
   # Find URL source
   class URLSourceResolver
     # The URL path

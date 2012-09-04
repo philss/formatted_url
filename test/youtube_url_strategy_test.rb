@@ -2,7 +2,7 @@ require 'test_helper'
 
 class YoutubeURLStrategyTest < Test::Unit::TestCase
   def setup
-    @strategy = URLFormatter::Strategies::YoutubeURLStrategy
+    @strategy = FormattedURL::Strategies::YoutubeURLStrategy
     @url = 'http://www.youtube.com/watch?v=bNlNZ2T9EeY'
     @url2 = 'http://www.youtube.com/watch?v=XXXdDDASDFw'
   end

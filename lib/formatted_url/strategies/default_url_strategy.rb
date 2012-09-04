@@ -1,5 +1,5 @@
 
-module URLFormatter
+module FormattedURL
   module Strategies
     # Default strategy to manage
     # paths. Returns the +path+ by
