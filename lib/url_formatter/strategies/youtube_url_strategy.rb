@@ -3,7 +3,10 @@ require File.expand_path('../default_url_strategy', __FILE__)
 
 module URLFormatter
   module Strategies
+    # Youtube Strategy to work with embed
+    # and short formats
     class YoutubeURLStrategy < DefaultURLStrategy
+
       # Short path from youtube
       def short
         "http://youtu.be/#{youtube_id}"
