@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    url_formatter (0.0.2)
+    formatted_url (0.0.4)
       youtube_id
 
 GEM
@@ -14,5 +14,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  formatted_url!
   rake
-  url_formatter!
