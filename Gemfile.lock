@@ -1,11 +1,11 @@
 PATH
   remote: .
   specs:
-    formatted_url (0.0.4)
-      youtube_id
+    formatted_url (0.0.6)
+      youtube_id (~> 0.0.3)
 
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     rake (0.9.2.2)
     youtube_id (0.0.3)

@@ -1,7 +1,7 @@
 require File.expand_path('../strategies', __FILE__)
 
 module FormattedURL
-  # Find URL source
+  # Finds URL source
   class URLSourceResolver
     # The URL path
     attr_accessor :path
@@ -15,7 +15,7 @@ module FormattedURL
       @format = format
     end
 
-    # Defines url source
+    # Defines URL source
     def source
       STRATEGIES.each_key do |key|
         if clean_url.include? key.to_s
